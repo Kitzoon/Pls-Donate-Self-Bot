@@ -1,15 +1,8 @@
+# Multi exploit support now with this fork!
 # Pls Donate! Self Bot
 A self bot for the roblox experience Pls Donate!
 
 [The Game!](roblox.com/games/8737602449)
-
-Btw this was written at like 4 am with bare minimum testing so if its buggy just make a issue on github and ill probably get around to fixing it
-
-Its pretty useful if you wanna afk and make some robux or something. Just look at the settings at the top of the
-
-It has a autoboard type thing in so the board will auto update its "goal" (i.e. at the end of the text you set the goal will be something like "515 / 5k" and the number on the left will automatically update)
-
-It will also server hop depending on the amount of players or if you want to set a server hop interval 
 
 ## Script:
 
@@ -44,5 +37,3 @@ _G.loadstr = "https://raw.githubusercontent.com/Kitzoon/Pls-Donate-Self-Bot/main
 
 loadstring(game:HttpGet(_G.loadstr, true))()
 ```
-
-# Multi exploit support now with this fork!
