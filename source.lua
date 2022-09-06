@@ -8,11 +8,13 @@ VirtualUser:CaptureController()
 VirtualUser:ClickButton2(Vector2.new())
 end)
 
+local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
+
 if _G.hopAtPlayerAmount > 0 then
     spawn(function()
         while wait() do
             if #game.Players:GetChildren() <= _G.hopAtPlayerAmount then
-                syn.queue_on_teleport([[
+                teleportFunc([[
                     _G.autoUpdateGoal = ]] .. tostring(_G.autoUpdateGoal).. [[
                     _G.increaseGoalBy = ]] ..tostring(_G.increaseGoalBy) .. [[
 
@@ -92,7 +94,7 @@ end
 if _G.hopInterval > 0 then
     spawn(function()
         wait(_G.hopInterval)
-        syn.queue_on_teleport([[
+        teleportFunc([[
             _G.autoUpdateGoal = ]] .. tostring(_G.autoUpdateGoal).. [[
             _G.increaseGoalBy = ]] ..tostring(_G.increaseGoalBy) .. [[
 
