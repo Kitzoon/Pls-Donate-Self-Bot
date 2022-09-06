@@ -44,3 +44,5 @@ _G.loadstr = "https://raw.githubusercontent.com/Kitzoon/Pls-Donate-Self-Bot/main
 
 loadstring(game:HttpGet(_G.loadstr, true))()
 ```
+
+# Multi exploit support now with this fork!
